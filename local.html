@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Location</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- Custom -->
+<link href="css/loc.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--- nav bar--->
+<nav class="navbar navbar-default navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>ROXA'S KITCHEN</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="local.html">WHERE</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">GALARY</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h1 class="text-center">Location</h1>
+    </div>
+  </div>
+  <hr width="85%">
+</div>
+
+<div class="container">
+
+<div id="googleMap"></div>
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(25.063674, 121.519417);
+
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:17,
+scrollwheel:true,
+draggable:true,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</div>
+<div class="container">
+
+</div>
+<!-- Footer -->
+<div class="container">
+<br/>
+<span class="glyphicon glyphicon-phone-alt logo" aria-hidden="true">&nbsp;02-25957508</span>
+<br/>
+<br/>
+<span class="glyphicon glyphicon-home logo" aria-hidden="true">&nbsp;No.1, Ln. 41, Fushun St., <br/>&nbsp;&nbsp;Zhongshan Dist., Taipei City</span>
+<br><br>
+<br><br>
+<br><br>
+
+</div>
+<!-- Footer -->
+<footer class="text-center">
+  
+  <br><br>
+  <p>ROXA'S KITCHEN ALL RIGHT RESERVED<a href="#" data-toggle="tooltip" title="Visit w3schools"></a></p> 
+</footer>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
