@@ -4,12 +4,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Location</title>
+<title>Bootstrap - Prebuilt Layout</title>
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.css" rel="stylesheet">
-<!-- Custom -->
-<link href="css/loc.css" rel="stylesheet">
+<link href="css/about.css" rel="stylesheet" type="text/css">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,9 +18,8 @@
     <![endif]-->
 </head>
 <body>
-
 <!--- nav bar--->
-<nav class="navbar navbar-default navbar-inverse">
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -42,69 +40,31 @@
     </div>
   </div>
 </nav>
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+<div class="col-sm-6"></div>
+<div class="col-sm-6"></div>
+<br/>
+<br/>
+</div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <h1 class="text-center">Location</h1>
+ 
+<!-- About Container -->
+
+<div class="container">
+<br/><br/><br/><br/>
+<h1>Inspired by classic French fare and the fresh flavor of his native New Orleans, Chef Erik Niel’s restaurant is a bistro reimagined for Southeast Tennessee.  Easy Bistro & Bar blends a modern, ingredient-focused menu with upscale comfort food and impeccable hospitality. </h1>
+<p>Located off Broad Street in what was formerly the world’s first Coca-Cola bottling plant, the soaring dining room and dramatic décor serves as a backdrop for an inspired meal – all served by friendly, attentive servers dressed in black and white. The backlit bar features a national recognized cocktail program and wine list of 250 bottles from around the world, with a focus on France and California.. 
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</p>
+</div>
+
+<div id="footer">
+      <div class="container">
+        <p>ROXA'S KITCHEN</p>
+      </div>
     </div>
-  </div>
-  <hr width="85%">
-</div>
-
-<div class="container">
-
-<div id="googleMap"></div>
-<!-- Add Google Maps -->
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter = new google.maps.LatLng(25.063674, 121.519417);
-
-function initialize() {
-var mapProp = {
-center:myCenter,
-zoom:17,
-scrollwheel:true,
-draggable:true,
-mapTypeId:google.maps.MapTypeId.ROADMAP
-};
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-position:myCenter,
-});
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-</div>
-<div class="container">
-
-</div>
-<!-- Footer -->
-<div class="container">
-<br/>
-<span class="glyphicon glyphicon-phone-alt logo" aria-hidden="true">&nbsp;02-25957508</span>
-<br/>
-<br/>
-<span class="glyphicon glyphicon-home logo" aria-hidden="true">&nbsp;No.1, Ln. 41, Fushun St., <br/>&nbsp;&nbsp;Zhongshan Dist., Taipei City</span>
-<br><br>
-<br><br>
-<br><br>
-
-</div>
-<!-- Footer -->
-<footer class="text-center">
-  
-  <br><br>
-  <p>ROXA'S KITCHEN ALL RIGHT RESERVED<a href="#" data-toggle="tooltip" title="Visit w3schools"></a></p> 
-</footer>
-
-
-
+ 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="js/jquery-1.11.3.min.js"></script>
 
