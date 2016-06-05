@@ -147,7 +147,10 @@ footer p {
     border: 0;
     font-size: 11px !important;
     letter-spacing: 4px;
-    opacity:0.9;
+    /*opacity:0.9;*/
+	padding-top: 10px;
+    padding-bottom: 10px;
+	font-size: 16px !important;
 }
 
 /* Add a gray color to all navbar links */
@@ -168,7 +171,7 @@ footer p {
 
 /* Remove border color from the collapsible button */
 .navbar-default .navbar-toggle {
-    border-color: transparent;
+    /*border-color: transparent;*/
 }
 
 /* Dropdown */
